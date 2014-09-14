@@ -5,6 +5,15 @@ import android.util.AttributeSet;
 import android.view.View;
 
 public class CompassActivity extends View{
+	private float bearing;
+	
+	public void setBearing(float _bearing) { 
+		bearing = _bearing;
+	}
+	
+	public float getBearing() { 
+		return bearing;
+	}
 
 	public CompassActivity(Context context, AttributeSet attrs, int defStyleAttr) {
 		super(context, attrs, defStyleAttr);
